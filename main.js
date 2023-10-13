@@ -183,7 +183,7 @@ let bgs = [
   "bg10.png",
 ];
 let bg = document.querySelector(".bg").style;
-bg.background = `url(./../${bgs[whichBg]})`;
+bg.background = `url(./${bgs[whichBg]})`;
 bg.backgroundPosition = "center";
 bg.backgroundSize = "cover";
 
@@ -192,7 +192,7 @@ document.querySelector(".bg-btn").addEventListener("click", () => {
   if (whichBg >= 10) {
     whichBg = 0;
   }
-  bg.background = `url(./../${bgs[whichBg]})`;
+  bg.background = `url(./${bgs[whichBg]})`;
   bg.backgroundPosition = "center";
   bg.backgroundSize = "cover";
   console.log("Changed");
